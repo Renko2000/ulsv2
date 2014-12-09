@@ -92,6 +92,13 @@
 <script src="scripts/jquery-1.11.0.min.js"></script>
 <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
 <script type='text/javascript'>
+
+document.addEventListener("deviceready", function(e) {
+	window.setTimeout(function() {
+		navigator.splashscreen.hide();
+	},5000);
+			
+}, "false");
 //<![CDATA[ 
 $(window).load(function(){
     $('#app').ready(function () {
